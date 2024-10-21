@@ -9,6 +9,8 @@ public class Humain {
 		this.nom = nom;
 		this.boisson = boisson;
 		this.argent = argent;
+		
+		assert argent <=0;
 	}
 
 	public String getNom() {
@@ -32,6 +34,7 @@ public class Humain {
 	}
 
 	public void acheter(String bien, int prix) {
+		assert prix >= 0;
 		if (argent >= prix) {
 			parler("J'ai " + argent + " sous en poche. Je vais pouvoir m'offrir " + bien + " à " + prix + " sous.");
 			perdreArgent(prix);
