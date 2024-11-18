@@ -44,11 +44,11 @@ public class Humain {
 		}
 	}
 
-	public void perdreArgent(int perte) {
-		argent -= perte;
+	public int perdreArgent(int perte) {
+		return this.argent -= perte;
 	}
 
-	public void gagnerArgent(int gain) {
-		argent += gain;
+	public int gagnerArgent(int gain) {
+		return this.argent += gain;
 	}
 }
