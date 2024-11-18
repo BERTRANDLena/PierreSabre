@@ -22,8 +22,10 @@ public class HistoireTP4 {
 //		marco.seFaireExtorquer();
 //		marco.recevoir(15);
 //		marco.boire();
-		roro.direBonjour();
-		roro.donner(marco);
+//		roro.direBonjour();
+//		roro.donner(marco);
+		
+		roro.provoquer(yaku);
 		
 		
 
