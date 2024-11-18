@@ -4,13 +4,13 @@ public class Humain {
 	private String nom;
 	private String boisson;
 	private int argent;
-	
+
 	public Humain(String nom, String boisson, int argent) {
 		this.nom = nom;
 		this.boisson = boisson;
 		this.argent = argent;
-		
-		assert argent <=0;
+
+		assert argent <= 0;
 	}
 
 	public String getNom() {
@@ -45,10 +45,12 @@ public class Humain {
 	}
 
 	public int perdreArgent(int perte) {
-		return this.argent -= perte;
+		this.argent -= perte;
+		return argent;
 	}
 
 	public int gagnerArgent(int gain) {
-		return this.argent += gain;
+		this.argent += gain;
+		return argent;
 	}
 }
